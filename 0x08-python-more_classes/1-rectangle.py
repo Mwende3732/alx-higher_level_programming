@@ -43,8 +43,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """
-        """
-        if not isinstance(value, int):            setter function for private attribute width
+            setter function for private attribute width
             Args:
                 value (int): new width value
         """
@@ -68,9 +67,10 @@ class Rectangle:
             setter function for the private attribute height
             Args:
                 value (int): new height value
-
+        """
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
+        
