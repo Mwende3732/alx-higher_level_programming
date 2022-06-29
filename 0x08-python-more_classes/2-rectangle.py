@@ -29,20 +29,20 @@ class Rectangle:
         return self.__height
 
     @height.setter
-idth)
-
-    def perimeter(self):
-        """returns rectangle perimeter"""
-        if self.__height i    def height(self, value):
+    def height(self, value):
         """height validation and setter"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0 is True:
             raise ValueError("height must be >= 0")
         self.__height = value
-
+e area"""
+        return (self.__height * self.__w
     def area(self):
-        """returns rectangle area"""
-        return (self.__height * self.__ws 0 or self.__height is 0:
+        """returns rectanglidth)
+
+    def perimeter(self):
+        """returns rectangle perimeter"""
+        if self.__height is 0 or self.__height is 0:
             return 0
         return (2 * (self.__height + self.__width))
